@@ -1,0 +1,27 @@
+/**
+* Buttons styles
+**/
+
+.btn-default {
+  display: inline-block;
+  padding: 14px 25px;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  font-weight: 300;
+  background-color: @color-blue;
+  border: 1px solid @color-blue;
+  border-radius: 0;
+  color: #fff;
+
+  &.btn-bordered {
+    border: 1px solid #fff;
+    border-radius: 2px;
+  }
+  
+  &:focus,
+  &:hover {
+    background-color: @color-blue-hover;
+    color: #fff;
+  }
+}

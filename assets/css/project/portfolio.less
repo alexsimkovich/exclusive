@@ -1,0 +1,209 @@
+/**
+* Portfolio styles
+**/
+
+.portfolio {
+  padding: 0;
+  margin-bottom: 80px;
+
+  .portfolio_t {
+    text-align: center;
+    padding-bottom: 15px;
+  }
+
+  .portfolio-nav {
+    text-align: center;
+
+    .portfolio-nav_ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 25px;
+
+      .portfolio-nav_li {
+        display: inline-block;
+        margin: 0 32px;
+
+        a {
+          font-weight: 300;
+
+          &:focus,
+          &:hover {
+            font-weight: 400;
+            color: #111;
+          }
+        }
+
+        &.active {
+          a {
+            font-weight: 400;
+            color: #111;
+          }
+        }
+      }
+    }
+  }
+
+  .portfolio-block {
+    width: 100%;
+
+    .portfolio-block_i {
+      float: left;
+      width: 25%;
+      height: 210px;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+
+      .portfolio-box {
+        position: relative;
+
+        .portfolio_overlay {
+          display: none;
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-color: rgba(0,0,0,.7);
+
+          .portfolio_link {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+
+            span {
+              position: absolute;
+              top: 35%;
+              left: 50%;
+              margin-left: -91px;
+              display: inline-block;
+              padding: 15px 25px;
+              font-size: 14px;
+              line-height: 14px;
+              text-transform: uppercase;
+              font-weight: 300;
+              border: none;
+              background-color: @color-blue;
+              border-radius: 0;
+              color: #fff;
+              
+              &:hover,
+              &:focus {
+                background-color: @color-blue-hover;
+                color: #fff;
+              }
+            }
+
+            i.icon-plus {
+              position: absolute;
+              bottom: 50px;
+              left: 50%;
+              background: url(../../../assets/images/icons/icon-plus.png);
+              width: 36px;
+              height: 36px;
+              margin-left: -18px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .portfolio-about {
+    padding: 65px 0 0;
+    text-align: center;
+  }
+
+  .portfolio-detail {
+    .portfolio-detail_t {
+      font-size: 24px;
+      font-weight: 300;
+      font-family: @font-slab;
+      color: @color-text;
+      margin-bottom: 25px;
+      text-align: center;
+    }
+    
+    .portfolio-detail_image {
+      margin-bottom: 65px;
+    }
+
+    .portfolio-detail_info {
+      text-align: center;
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .portfolio {
+    padding: 0;
+    margin-bottom: 45px;
+
+    .portfolio-block {
+      .portfolio-block_i {
+        width: 33.333333%;
+        height: 209px;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .portfolio {
+    padding: 0;
+    margin-bottom: 45px;
+
+    .portfolio-block {
+      .portfolio-block_i {
+        width: 33.333333%;
+        height: 156px;
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  .portfolio {
+    padding: 0;
+    margin-bottom: 45px;
+
+    .portfolio-block {
+      .portfolio-block_i {
+        width: 50%;
+        height: auto;
+      }
+    }
+
+    .portfolio-nav {
+      .portfolio-nav_ul {
+        .portfolio-nav_li {
+          margin: 0 5px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .portfolio {
+    padding: 0;
+    margin-bottom: 45px;
+
+    .portfolio-block {
+      .portfolio-block_i {
+        width: 100%;
+        padding: 0px 15px;
+        margin-bottom: 15px;
+      }
+    }
+
+    .portfolio-nav {
+      .portfolio-nav_ul {
+        .portfolio-nav_li {
+          margin: 0 5px;
+        }
+      }
+    }
+  }
+}

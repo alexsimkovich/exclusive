@@ -1,0 +1,33 @@
+/**
+* Comments styles
+**/
+
+.comments-block {
+  margin-bottom: 40px;
+
+  .comments-block_t {
+    font-family: @font-slab;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 300;
+    color: #111;
+    padding-bottom: 15px;
+    border-bottom: 1px solid @color-border;
+    margin-bottom: 40px;
+
+    span {
+      color: @color-text;
+    }
+  }
+}
+
+.comments-form {
+  margin-bottom: 40px;
+}
+
+@media (max-width: 360px) {
+  .comments-block,
+  .comments-form {
+    display: none;
+  }
+}

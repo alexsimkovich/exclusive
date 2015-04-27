@@ -1,0 +1,96 @@
+/**
+* Contacts styles
+**/
+
+.contact-block {
+  margin-bottom: 40px;
+
+  .contact-block_t {
+    font-size: 24px;
+    color: @color-text;
+    font-family: @font-slab;
+    font-weight: 300;
+    padding: 45px 0;
+    text-align: center;
+  }
+
+  .contact-block_form {
+
+    .contact-block_info {
+      margin-bottom: 65px;
+
+      .contact-block_i {
+
+        .info_icon {
+          display: inline-block;
+          vertical-align: middle;
+          background: url(../../../assets/images/icons/contact-icon.png) no-repeat center center;
+          width: 36px;
+          height: 37px;
+          margin-right: 10px;
+          text-align: center;
+          line-height: 37px;
+
+          i {
+            color: #fff;
+          }
+        }
+
+        .info_txt {
+          display: inline-block;
+          vertical-align: middle;
+          width: calc(~'100% - 49px');
+          font-size: 12px;
+          color: @color-text;
+          text-transform: uppercase;
+
+          span {
+            color: #111;
+
+            a {
+              color: #111;
+              text-transform: lowercase;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .contact-block {
+    .contact-block_form {
+      .contact-block_info {
+        .contact-block_i {
+          .info_txt {
+            width: calc(100% - 51px);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .contact-block {
+    .contact-block_form {
+      .contact-block_info {
+        .contact-block_i {
+          text-align: center;
+          margin-bottom: 20px;
+
+          .info_icon {
+            width: 100%;
+            margin-bottom: 6px;
+          }
+
+          .info_txt {
+            width: 100%;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}

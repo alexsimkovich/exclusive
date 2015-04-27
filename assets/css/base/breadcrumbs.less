@@ -1,0 +1,40 @@
+/**
+* Breadcrumbs styles
+**/
+
+.breadcrumbs {
+  padding: 45px 0 20px 0;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid @color-border;
+
+  .breadcrumb {
+    text-align: right;
+    margin: 0;
+
+    &>li {
+      &>a {
+        color: #111;
+        font-weight: 300;
+      }
+
+      &:hover,
+      &:focus {
+        &>a {
+          color: @color-text;
+          font-weight: 300;
+        }
+      }
+
+      &.active {
+        color: @color-text;
+        font-weight: 300;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .breadcrumbs {
+    padding: 25px 0 0;
+  }
+}

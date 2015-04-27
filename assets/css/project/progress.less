@@ -1,0 +1,54 @@
+/**
+* Progress styles
+**/
+
+.progress-block {
+  margin-bottom: 80px;
+
+  .progress-block_t {
+    text-align: center;
+    padding-bottom: 25px;
+  }
+
+  .progress-block_box {
+    .progress-block_i {
+      text-align: center;
+
+      .progress_icn {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: flex-end;
+        align-items: center;
+        align-content: center;
+        height: 40px;
+        margin-bottom: 30px;
+      }
+
+      .progress_cnt {
+        font-size: 36px;
+        line-height: 36px;
+        font-weight: 300;
+        color: @color-text;
+        margin-bottom: 25px;
+      }
+
+      .progress_info {
+        font-size: 14px;
+        line-height: 14px;
+        font-weight: 300;
+        color: #111;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .progress-block {
+    .progress-block_box {
+      .progress-block_i {
+        margin-bottom: 35px;
+      }
+    }
+  }
+}

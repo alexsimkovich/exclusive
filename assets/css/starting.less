@@ -1,0 +1,71 @@
+
+/*Basic theme colors*/
+@color-default: #3c3c3c;
+@color-blue: #059acb;
+@color-blue-hover: #036E92;
+
+/*Fonts color*/
+@color-text: #777;
+
+/*Border color*/
+@color-border: #eee;
+
+
+@font-roboto: 'Roboto', sans-serif;
+@font-slab: s'Roboto Slab', serif;
+
+body {
+  font-family: @font-roboto;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.wrapper {
+  min-height: 100%;
+  margin-bottom: -93px;
+
+  &:after {
+    content: "";
+    display: block;
+    height: 93px;
+  }
+}
+
+a {
+  color: #777;
+  -webkit-transition: 0.25s all linear;
+  -moz-transition: 0.25s all linear;
+  -ms-transition: 0.25s all linear;
+  -o-transition: 0.25s all linear;
+  transition: 0.25s all linear;
+
+  &:focus,
+  &:hover {
+    text-decoration: none;
+    outline: 0;
+  }
+}
+
+p {
+  font-size: 14px;
+  color: @color-text;
+  line-height: 22px;
+  font-weight: 300;
+}
+
+@media (max-width: 767px) {
+  a,
+  p {
+    font-size: 18px;
+    line-height: 30px !important;
+    font-weight: 300;
+  }
+
+  .wrapper {
+    margin-bottom: 0;
+
+    &:after {
+      height: auto
+    }
+  }
+}
