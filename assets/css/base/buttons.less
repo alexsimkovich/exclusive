@@ -25,3 +25,27 @@
     color: #fff;
   }
 }
+
+.btn-white {
+  display: inline-block;
+  padding: 14px 25px;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  font-weight: 300;
+  background-color:rgba(255,255,255,.3);
+  border: 1px solid #fff;
+  border-radius: 0;
+  color: #fff;
+
+  &.btn-bordered {
+    border: 1px solid #fff;
+    border-radius: 2px;
+  }
+
+  &:focus,
+  &:hover {
+    background-color: #fff;
+    color: @color-blue;
+  }
+}
