@@ -1,0 +1,82 @@
+/**
+* Services styles
+**/
+
+.services {
+
+  .services_t {
+    margin-top: 70px;
+    font-size: 24px;
+    color: @color-text;
+    font-family: @font-slab;
+    font-weight: 300;
+    padding: 0 0 60px;
+    text-align: center;
+  }
+  .services-block {
+    .services-block_i {
+      text-align: center;
+      margin-bottom: 50px;
+
+      .services_icn {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 2px solid #f1f1f1;
+        margin: 0 auto 30px;
+        text-align: center;
+        line-height: 98px;
+        -webkit-transition: all 0.3s linear;
+        -moz-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+        -o-transition: all 0.3s linear;
+        transition: all 0.3s linear;
+
+        &.__design {
+          background: url(../../../assets/images/icons/icon-creative.png) no-repeat center center;
+          background-size: 51px 48px;
+        }
+        &.__dev {
+          background: url(../../../assets/images/icons/icon-reliable.png) no-repeat center center;
+          background-size: 50px 48px;
+        }
+        &.__marketing {
+          background: url(../../../assets/images/icons/icon-friendly.png) no-repeat center center;
+          background-size: 48px 45px;
+        }
+
+        &:hover,
+        &:focus {
+          border: none;
+
+          &.__design {
+            background: @color-blue url(../../../assets/images/icons/icon-creative_hover.png) no-repeat center center;
+            background-size: 51px 48px;
+          }
+          &.__dev {
+            background: @color-blue url(../../../assets/images/icons/icon-reliable_hover.png) no-repeat center center;
+            background-size: 50px 48px;
+          }
+          &.__marketing {
+            background: @color-blue url(../../../assets/images/icons/icon-friendly_hover.png) no-repeat center center;
+            background-size: 48px 45px;
+          }
+        }
+      }
+
+      .services_n {
+        margin-bottom: 30px;
+        font-size: 14px;
+        line-height: 14px;
+        text-transform: uppercase;
+        color: #111;
+      }
+
+      .services_txt {
+        color: @color-text;
+        font-size: 12px;
+      }
+    }
+  }
+}

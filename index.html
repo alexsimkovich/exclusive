@@ -20,55 +20,11 @@
   <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
-  <style>
-    .tp-caption.largeboldwhitecustom, .largeboldwhitecustom {
-      font-size: 58px;
-      line-height: 60px;
-      font-weight: 400;
-      font-family: "Open Sans";
-      color: #ffffff;
-      text-decoration: none;
-      background-color: transparent;
-      border-width: 0px;
-      border-color: rgb(255, 214, 88);
-      border-style: none
-    }
-
-    .tp-caption.smalllightwhitecustom, .smalllightwhitecustom {
-      font-size: 16px;
-      line-height: 28px;
-      font-weight: 400;
-      font-family: "Open Sans";
-      color: #ffffff;
-      text-decoration: none;
-      padding: 0px 0px 0px 0px;
-      text-align: center;
-      background-color: transparent;
-      border-width: 0px;
-      border-color: rgb(255, 214, 88);
-      border-style: none
-    }
-
-    .tp-caption.smalllightwhitecustom, .smalllightwhitecustom {
-      font-size: 16px;
-      line-height: 28px;
-      font-weight: 400;
-      font-family: "Open Sans";
-      color: #ffffff;
-      text-decoration: none;
-      padding: 0px 0px 0px 0px;
-      text-align: center;
-      background-color: transparent;
-      border-width: 0px;
-      border-color: rgb(255, 214, 88);
-      border-style: none
-    }
-  </style>
 </head>
 <body>
 <div class="wrapper">
   <!-- header block -->
-  <header class="header bullseye">
+  <header class="header">
     <div class="container">
       <div class="row">
         <div class="col-lg-6 col-md-5 col-sm-3">
@@ -108,7 +64,7 @@
   </header>
   <!-- /header block -->
   <!-- Slider block -->
-  <section class="slider bullseye hidden-xs">
+  <section class="slider hidden-xs">
     <div class="slider-block">
       <div id="rev_slider_1_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" style="margin:0px auto;background-color:#E9E9E9;padding:0px;margin-top:0px;margin-bottom:0px;max-height:500px;">
         <!-- START REVOLUTION SLIDER 4.6.5 fullwidth mode -->
@@ -261,7 +217,7 @@
   </section>
   <!-- /Slider block -->
   <!-- why block -->
-  <section class="why bullseye">
+  <section class="why">
     <div class="container">
       <div class="why-block row">
         <div class="why-block_i col-sm-4">
@@ -349,7 +305,7 @@
   </section>
   <!-- /why block -->
   <!-- portfolio block -->
-  <section class="portfolio bullseye">
+  <section class="portfolio">
     <div class="portfolio_t"><h2 class="h2">Portfolio</h2></div>
     <div class="portfolio-nav">
       <ul id="portfolio-filter" class="portfolio-nav_ul">
@@ -801,7 +757,25 @@
 <script src="assets/js/general.js"></script>
 <script>
   $(function () {
+    TweenMax.staggerFrom($('.why-block_i'), 1.1, {opacity: 0, y:200, x:-100, yoyo:true}, 0.25);
+    var controller = $.superscrollorama();
 
+    var staggerTween1 = new TimelineMax();
+    var staggerTween2 = new TimelineMax();
+    var staggerTween3 = new TimelineMax();
+    var staggerTween4 = new TimelineMax();
+
+    staggerTween1.add(TweenMax.staggerFrom($('.portfolio-block_i'), 0.75, {opacity: 0, rotation: 180, ease: Quad.easeOut}, 0.15));
+    controller.addTween('.portfolio-block_i', staggerTween1);
+
+    staggerTween2.add(TweenMax.staggerFrom($('.progress-block_i'), 0.85, {opacity: 0, rotation: 180, ease: Bounce.easeOut}, 0.15));
+    controller.addTween('.progress-block_i', staggerTween2);
+
+    staggerTween3.add(TweenMax.staggerFrom($('.news_box'), 0.65, {opacity: 0, scale: 0, ease: Bounce.easeOut}, 0.15));
+    controller.addTween('.news_box', staggerTween3);
+
+    staggerTween4.add(TweenMax.staggerFrom($('.bottom-panel_i'), 0.45, {opacity: 0, scale: 0, ease: Bounce.easeInOut}, 0.15));
+    controller.addTween('.bottom-panel_i', staggerTween4);
 
     var $container = $('#portfolio-list').isotope({
       itemSelector: '.portfolio-block_i',
