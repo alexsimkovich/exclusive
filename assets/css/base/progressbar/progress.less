@@ -1,0 +1,43 @@
+/**
+* Restyling
+**/
+.progress-box {
+  margin-top: 25px;
+  
+  .progress {
+    position: relative;
+    overflow: visible;
+    margin-bottom: 50px;
+    height: 4px;
+
+    & > span {
+      position: absolute;
+      left: 0;
+      top: -25px;
+      text-transform: uppercase;
+      color: @color-text;
+    }
+
+    .progress-bar {
+
+      span {
+        position: absolute;
+        top: -25px;
+        right: 0;
+        color: @color-text;
+        font-size: 14px;
+      }
+      
+      &.progress-bar-success {
+        background-color: @color-green;
+      }
+
+      &.progress-bar-info {
+        background-color: @color-blue;
+      }
+      &.progress-bar-default {
+        background-color: #02b4cb;
+      }
+    }
+  }
+}

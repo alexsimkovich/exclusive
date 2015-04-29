@@ -1,0 +1,29 @@
+/**
+* Dropdown menu restyling
+**/
+
+.navbar-right {
+  .dropdown-menu {
+    right: auto;
+    left: 0;
+    top: 100%;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    border-radius: 0;
+
+    &>li {
+      &>a {
+        padding: 10px 20px;
+        color: @color-text;
+        text-transform: uppercase;
+
+        &:hover,
+        &:focus {
+          background-color: @color-blue;
+          color: #fff;
+        }
+      }
+    }
+  }
+}

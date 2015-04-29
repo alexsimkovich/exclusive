@@ -1,0 +1,66 @@
+/**
+* Skills styles
+**/
+
+.skills {
+  padding: 70px 0 65px;
+  background-color: #f8f8f8;
+
+  .skills_t {
+    font-size: 24px;
+    color: @color-text;
+    font-family: @font-slab;
+    font-weight: 300;
+    padding: 0 0 60px;
+    text-align: center;
+  }
+
+  .skills_info {
+    .skills_info-t {
+      position: relative;
+      font-size: 14px;
+      text-transform: uppercase;
+      color: #111;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+      letter-spacing: 1px;
+
+      &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 50px;
+        height: 1px;
+        background-color: @color-blue;
+      }
+    }
+
+    p {
+      font-size: 12px;
+      line-height: 20px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .skills {
+    .skills_info {
+      .skills_info-t {
+        text-align: center;
+        font-size: 22px;
+
+        &:after {
+          left: 50%;
+          margin-left: -25px;
+        }
+      }
+      p {
+        font-size: 18px;
+        line-height: 30px;
+        font-weight: 300;
+        text-align: center;
+      }
+    }
+  }
+}

@@ -43,7 +43,13 @@ module.exports = function(grunt) {
     concat: {
       dist: {
         src: [
-          'assets/js/lib/jquery-1.10.2.min.js', // All JS in the libs folder
+          'assets/js/lib/jquery.js', // All JS in the libs folder
+          'assets/js/lib/isotope.pkgd.js', // All JS in the libs folder
+          'assets/js/lib/slick.js', // All JS in the libs folder
+          'assets/js/lib/countUp.js', // All JS in the libs folder
+          'assets/js/lib/TweenMax.js', // All JS in the libs folder
+          'assets/js/lib/jquery.superscrollorama.js', // All JS in the libs folder
+          'assets/js/general.js'
         ],
         dest: 'build/js/production.js'
       }

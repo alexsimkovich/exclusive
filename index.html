@@ -10,12 +10,12 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Alex.K portfolio - main page</title>
+  <title>Exclusive theme - main page</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="build/css/main.min.css">
   <!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -48,11 +48,25 @@
                 </div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contacts</a></li>
+                    <li class="active"><a href="/index.html">Home</a></li>
+                    <li class="dropdown"><a href="/blog.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Blog</a>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a href="/blog-list.html">Blog list</a></li>
+                        <li><a href="/blog-detail.html">Blog detail</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown"><a href="/portfolio.html">Portfolio</a>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a href="/portfolio-detail.html">Portfolio detail</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown"><a href="#">Pages</a>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a href="/about.html">About us</a></li>
+                        <li><a href="/services.html">Services</a></li>
+                        <li><a href="/contacts.html">Contacts</a></li>
+                      </ul>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -431,22 +445,22 @@
       <div class="progress-block_box row">
         <div class="col-sm-3 progress-block_i">
           <div class="progress_icn"><img src="assets/images/icons/icon-email.png" alt=""/></div>
-          <div class="progress_cnt">135</div>
+          <div id="cnt1" class="progress_cnt"></div>
           <div class="progress_info">sent email</div>
         </div>
         <div class="col-sm-3 progress-block_i">
           <div class="progress_icn"><img src="assets/images/icons/icon-files.png" alt=""/></div>
-          <div class="progress_cnt">6000</div>
+          <div id="cnt2" class="progress_cnt"></div>
           <div class="progress_info">got files</div>
         </div>
         <div class="col-sm-3 progress-block_i">
           <div class="progress_icn"><img src="assets/images/icons/icon-photo.png" alt=""/></div>
-          <div class="progress_cnt">3200</div>
+          <div id="cnt3" class="progress_cnt"></div>
           <div class="progress_info">made photo</div>
         </div>
         <div class="col-sm-3 progress-block_i">
-          <div class="progress_icn"><img src="assets/images/icons/icon-email.png" alt=""/></div>
-          <div class="progress_cnt">800</div>
+          <div class="progress_icn"><img src="assets/images/icons/icon-request.png" alt=""/></div>
+          <div id="cnt4" class="progress_cnt"></div>
           <div class="progress_info">got requests</div>
         </div>
       </div>
@@ -746,17 +760,22 @@
     </div>
   </div>
 </footer>
-<script src="assets/js/lib/jquery.js"></script>
-<script src="assets/js/lib/bootstrap.js"></script>
-<script src="assets/js/lib/isotope.pkgd.js"></script>
-<script src="assets/js/lib/slick.js"></script>
-<script src="assets/js/lib/TweenMax.js"></script>
-<script src="assets/js/lib/jquery.superscrollorama.js"></script>
+<script src="build/js/production.min.js"></script>
 <script src="assets/js/lib/jquery.themepunch.tools.min.js"></script>
 <script src="assets/js/lib/jquery.themepunch.revolution.min.js"></script>
-<script src="assets/js/general.js"></script>
+
 <script>
+  var options = {
+    useEasing : true,
+    useGrouping : true,
+    separator : '',
+    decimal : '',
+    prefix : '',
+    suffix : ''
+  };
+
   $(function () {
+
     TweenMax.staggerFrom($('.why-block_i'), 1.1, {opacity: 0, y:200, x:-100, yoyo:true}, 0.25);
     var controller = $.superscrollorama();
 
@@ -765,16 +784,16 @@
     var staggerTween3 = new TimelineMax();
     var staggerTween4 = new TimelineMax();
 
-    staggerTween1.add(TweenMax.staggerFrom($('.portfolio-block_i'), 0.75, {opacity: 0, rotation: 180, ease: Quad.easeOut}, 0.15));
+    staggerTween1.add(TweenMax.staggerFrom($('.portfolio-block_i'), 0.75, {opacity: 0, scale: 0, ease: Quad.easeOut}, 0.15));
     controller.addTween('.portfolio-block_i', staggerTween1);
 
-    staggerTween2.add(TweenMax.staggerFrom($('.progress-block_i'), 0.85, {opacity: 0, rotation: 180, ease: Bounce.easeOut}, 0.15));
+    staggerTween2.add(TweenMax.staggerFrom($('.progress-block_i'), 0.85, {opacity: 0, scale: 0, ease: Bounce.easeOut}, 0.15));
     controller.addTween('.progress-block_i', staggerTween2);
 
     staggerTween3.add(TweenMax.staggerFrom($('.news_box'), 0.65, {opacity: 0, scale: 0, ease: Bounce.easeOut}, 0.15));
     controller.addTween('.news_box', staggerTween3);
 
-    staggerTween4.add(TweenMax.staggerFrom($('.bottom-panel_i'), 0.45, {opacity: 0, scale: 0, ease: Bounce.easeInOut}, 0.15));
+    staggerTween4.add(TweenMax.from($('.bottom-panel_i'), 0.45, {opacity: 0, scale: 0, ease: Bounce.easeInOut}, 0.15));
     controller.addTween('.bottom-panel_i', staggerTween4);
 
     var $container = $('#portfolio-list').isotope({
@@ -797,6 +816,22 @@
       autoplay: true,
       arrows: false,
       dots: true
+    });
+
+    $(window).scroll(function() {
+      var a = $(window).scrollTop();
+      if (a > ($(".header").height() + $(".slider").height() + $(".why").height() + $(".portfolio").height())) {
+
+        var demo1 = new countUp("cnt1", 0, 135, 0, 3, options);
+        demo1.start();
+        var demo2 = new countUp("cnt2", 0, 6000, 0, 3, options);
+        demo2.start();
+        var demo3 = new countUp("cnt3", 0, 3200, 0, 3, options);
+        demo3.start();
+        var demo4 = new countUp("cnt4", 0, 800, 0, 3, options);
+        demo4.start();
+
+      }
     });
 
     jQuery('#rev_slider_1_1').show().revolution(

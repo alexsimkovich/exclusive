@@ -10,7 +10,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Alex.K portfolio - Contacts</title>
+  <title>Exclusive theme - Contacts</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
@@ -48,11 +48,25 @@
                 </div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contacts</a></li>
+                    <li class="active"><a href="/index.html">Home</a></li>
+                    <li class="dropdown"><a href="/blog.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Blog</a>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a href="/blog-list.html">Blog list</a></li>
+                        <li><a href="/blog-detail.html">Blog detail</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown"><a href="/portfolio.html">Portfolio</a>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a href="/portfolio-detail.html">Portfolio detail</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown"><a href="#">Pages</a>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a href="/about.html">About us</a></li>
+                        <li><a href="/services.html">Services</a></li>
+                        <li><a href="/contacts.html">Contacts</a></li>
+                      </ul>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -113,31 +127,31 @@
                 </div>
               </div>
             </div>
-            <form action="" class="form-horizontal">
+            <form action="mail.php" method="POST" class="form-horizontal">
               <div class="row">
                 <div class="col-sm-6">
-                  <div class="form-group">
+                  <div id="name-group" class="form-group">
                     <div class="col-xs-12">
-                      <input type="text" class="form-control" placeholder="Name"/>
+                      <input type="text" name="name" class="form-control" placeholder="Name"/>
                     </div>
                   </div>
                 </div>
                 <div class="col-sm-6">
-                  <div class="form-group">
+                  <div id="email-group" class="form-group">
                     <div class="col-xs-12">
-                      <input type="email" class="form-control" placeholder="Email"/>
+                      <input type="email" name="email" class="form-control" placeholder="Email"/>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="form-group">
+              <div id="website-group" class="form-group">
                 <div class="col-xs-12">
-                  <input type="text" class="form-control" placeholder="Website"/>
+                  <input type="text" name="website" class="form-control" placeholder="Website"/>
                 </div>
               </div>
-              <div class="form-group">
+              <div id="comment-group" class="form-group">
                 <div class="col-xs-12">
-                  <textarea rows="6" class="form-control" placeholder="Comment"></textarea>
+                  <textarea rows="6" name="comment" class="form-control" placeholder="Comment"></textarea>
                 </div>
               </div>
               <div class="form-group">
