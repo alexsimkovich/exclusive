@@ -1,24 +1,23 @@
 
 /*Basic theme colors*/
-@color-default: #3c3c3c;
+@color-default: #2c2c2c;
 @color-blue: #059acb;
 @color-blue-hover: #036E92;
 @color-green: #8bc34a;
 
 /*Fonts color*/
-@color-text: #777;
+@color-text: #555;
 
 /*Border color*/
 @color-border: #eee;
 
-
-@font-roboto: 'Roboto', sans-serif;
-@font-slab: s'Roboto Slab', serif;
+@font-sans: 'Open sans', sans-serif;
 
 body {
-  font-family: @font-roboto;
+  font-family: @font-sans;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 15px;
+  line-height: 24px;
 }
 
 .wrapper {
@@ -29,6 +28,12 @@ body {
     content: "";
     display: block;
     height: 73px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    width: 1240px;
   }
 }
 

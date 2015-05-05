@@ -3,16 +3,25 @@
 **/
 
 .header {
+  position: fixed;
+  right: 0px;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  margin-bottom: 54px;
   background-color: @color-default;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
   
   .header_logo {
     float: left;
-    margin-left: 10px;
     margin-top: 12px;
 
     a {
       font-size: 20px;
-      font-family: @font-slab;
+      font-family: @font-sans;
       font-weight: 300;
       color: #fff;
     }

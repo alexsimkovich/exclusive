@@ -4,6 +4,7 @@
 
 .navbar-right {
   .dropdown-menu {
+    min-width: 220px;
     right: auto;
     left: 0;
     top: 100%;
@@ -11,12 +12,15 @@
     box-shadow: none;
     padding: 0;
     border-radius: 0;
+    background-color: @color-default;
 
     &>li {
       &>a {
-        padding: 10px 20px;
-        color: @color-text;
-        text-transform: uppercase;
+        display: block;
+        padding: 12px 15px;
+        color: #fff;
+        border-top: 1px solid #444;
+        font-size: 13px;
 
         &:hover,
         &:focus {

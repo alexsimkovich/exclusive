@@ -10,9 +10,10 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Exclusive theme - Services</title>
+  <title>Services | Soprano - Premium Corporate WordPress Theme</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="assets/images/favicon/favicon.ico">
   <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="assets/css/main.css">
@@ -29,7 +30,7 @@
       <div class="row">
         <div class="col-lg-6 col-md-5 col-sm-3">
           <div class="header_logo">
-            <a href="#">Exclusive</a>
+            <a href="#"><img src="assets/images/logo/logo.png" alt=""/></a>
           </div>
         </div>
         <div class="col-lg-6 col-md-7 col-sm-9">
@@ -48,25 +49,29 @@
                 </div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="/index.html">Home</a></li>
+                    <li><a href="/index.html">Homepage</a></li>
+                    <li class="dropdown active"><a href="#">Pages</a>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a href="/about.html">About us</a></li>
+                        <li><a href="/services.html">Services</a></li>
+                        <li><a href="/contacts.html">Contacts</a></li>
+                        <li><a href="/404-error.html">404 Errors</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown"><a href="/portfolio.html">Portfolio</a>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a href="/portfolio-2col.html">Portfolio 2 Columns</a></li>
+                        <li><a href="/portfolio-3col.html">Portfolio 3 Columns</a></li>
+                        <li><a href="/portfolio-detail.html">Portfolio Single</a></li>
+                      </ul>
+                    </li>
                     <li class="dropdown"><a href="/blog.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Blog</a>
                       <ul class="dropdown-menu" role="menu">
                         <li><a href="/blog-list.html">Blog list</a></li>
                         <li><a href="/blog-detail.html">Blog detail</a></li>
                       </ul>
                     </li>
-                    <li class="dropdown"><a href="/portfolio.html">Portfolio</a>
-                      <ul class="dropdown-menu" role="menu">
-                        <li><a href="/portfolio-detail.html">Portfolio detail</a></li>
-                      </ul>
-                    </li>
-                    <li class="dropdown"><a href="#">Pages</a>
-                      <ul class="dropdown-menu" role="menu">
-                        <li><a href="/about.html">About us</a></li>
-                        <li><a href="/services.html">Services</a></li>
-                        <li><a href="/contacts.html">Contacts</a></li>
-                      </ul>
-                    </li>
+                    <li><a href="/index.html">Purchase</a></li>
                   </ul>
                 </div>
               </div>
@@ -81,7 +86,7 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-6">
-          <h2 class="h2">Services</h2>
+          <div class="breadcrumb_t">Services</div>
         </div>
         <div class="col-sm-6">
           <ol class="breadcrumb hidden-xs">
@@ -98,7 +103,7 @@
       <div class="services_t">Our services</div>
       <div class="row services-block">
         <div class="col-md-4 services-block_i">
-          <div class="services_icn __design"></div>
+          <div class="services_icn __design"><i class="icon-screen50"></i></div>
           <div class="services_n">Web design</div>
           <div class="services_txt">
             Lorem ipsum dolor sit amet, c-r adipiscing elit. In
@@ -106,7 +111,7 @@
           </div>
         </div>
         <div class="col-md-4 services-block_i">
-          <div class="services_icn __dev"></div>
+          <div class="services_icn __dev"><i class="icon-statistics10"></i></div>
           <div class="services_n">Web design</div>
           <div class="services_txt">
             Lorem ipsum dolor sit amet, c-r adipiscing elit. In
@@ -114,7 +119,7 @@
           </div>
         </div>
         <div class="col-md-4 services-block_i">
-          <div class="services_icn __marketing"></div>
+          <div class="services_icn __marketing"><i class="icon-speech-bubble"></i></div>
           <div class="services_n">Web design</div>
           <div class="services_txt">
             Lorem ipsum dolor sit amet, c-r adipiscing elit. In
@@ -128,7 +133,7 @@
   <!-- our skills block -->
   <section class="skills">
     <div class="container">
-      <div class="skills_t">Our skills</div>
+      <div class="skills_t"><h2 class="h2">Our skills</h2></div>
       <div class="row">
         <div class="col-md-6">
           <div class="progress-box">
@@ -152,9 +157,9 @@
             </div>
           </div>
         </div>
-        <div class="col-md-offset-1 col-md-5">
+        <div class="col-md-6">
           <div class="skills_info">
-            <div class="skills_info-t">SOME TEXT BLOCK</div>
+           <!-- <div class="skills_info-t">SOME TEXT BLOCK</div>-->
             <p>
               Fusce non ante sed lorem rutrum feugiat. Vestibulum pellentesque,
               purus ut dignissim consectetur, nulla eratultrices purus, ut consequat
@@ -169,26 +174,27 @@
   </section>
   <!-- /our skills block -->
   <!-- Our progress -->
-  <section class="progress-block __background">
+  <section class="progress-block">
     <div class="container">
+      <div class="progress-block_t"><h2 class="h2">Our Progress</h2></div>
       <div class="progress-block_box row">
         <div class="col-sm-3 progress-block_i">
-          <div class="progress_icn"><img src="assets/images/icons/icon-email.png" alt=""/></div>
+          <div class="progress_icn"><i class="icon-envelope42"></i></div>
           <div id="cnt1" class="progress_cnt"></div>
           <div class="progress_info">sent email</div>
         </div>
         <div class="col-sm-3 progress-block_i">
-          <div class="progress_icn"><img src="assets/images/icons/icon-files.png" alt=""/></div>
+          <div class="progress_icn"><i class="icon-folder244"></i></div>
           <div id="cnt2" class="progress_cnt"></div>
           <div class="progress_info">got files</div>
         </div>
         <div class="col-sm-3 progress-block_i">
-          <div class="progress_icn"><img src="assets/images/icons/icon-photo.png" alt=""/></div>
+          <div class="progress_icn"><i class="icon-camera84"></i></div>
           <div id="cnt3" class="progress_cnt"></div>
           <div class="progress_info">made photo</div>
         </div>
         <div class="col-sm-3 progress-block_i">
-          <div class="progress_icn"><img src="assets/images/icons/icon-request.png" alt=""/></div>
+          <div class="progress_icn"><i class="icon-magnifying-glass"></i></div>
           <div id="cnt4" class="progress_cnt"></div>
           <div class="progress_info">got requests</div>
         </div>
@@ -196,95 +202,6 @@
     </div>
   </section>
   <!-- /Our progress -->
-  <!-- why block -->
-  <section class="why">
-    <div class="container">
-      <div class="why_t"><h2 class="h2">Why choose us</h2></div>
-      <div class="why-block row">
-        <div class="why-block_i col-sm-4">
-          <div class="why-block_box">
-            <div class="why_icn">
-              <img src="assets/images/icons/icon-creative.png" alt=""/>
-            </div>
-            <div class="why_n">we`re creative</div>
-            <div class="why_desc">
-              Lorem ipsum dolor sit amet, c-r adipiscing elit. In
-              maximus ligula semper metus pellentesque mattis.
-              Maecenas volutpat, diam enim.
-            </div>
-          </div>
-        </div>
-        <div class="why-block_i col-sm-4">
-          <div class="why-block_box">
-            <div class="why_icn">
-              <img src="assets/images/icons/icon-punctual.png" alt=""/>
-            </div>
-            <div class="why_n">we`re punctual</div>
-            <div class="why_desc">
-              Lorem ipsum dolor sit amet, c-r adipiscing elit. In
-              maximus ligula semper metus pellentesque mattis.
-              Maecenas volutpat, diam enim.
-            </div>
-          </div>
-        </div>
-        <div class="why-block_i col-sm-4">
-          <div class="why-block_box">
-            <div class="why_icn">
-              <img src="assets/images/icons/icon-friendly.png" alt=""/>
-            </div>
-            <div class="why_n">we`re friendly</div>
-            <div class="why_desc">
-              Lorem ipsum dolor sit amet, c-r adipiscing elit. In
-              maximus ligula semper metus pellentesque mattis.
-              Maecenas volutpat, diam enim.
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="why-block row">
-        <div class="why-block_i col-sm-4">
-          <div class="why-block_box">
-            <div class="why_icn">
-              <img src="assets/images/icons/icon-responsive.png" alt=""/>
-            </div>
-            <div class="why_n">we`re responsive</div>
-            <div class="why_desc">
-              Lorem ipsum dolor sit amet, c-r adipiscing elit. In
-              maximus ligula semper metus pellentesque mattis.
-              Maecenas volutpat, diam enim.
-            </div>
-          </div>
-        </div>
-        <div class="why-block_i col-sm-4">
-          <div class="why-block_box">
-            <div class="why_icn">
-              <img src="assets/images/icons/icon-team.png" alt=""/>
-            </div>
-            <div class="why_n">we have a great team</div>
-            <div class="why_desc">
-              Lorem ipsum dolor sit amet, c-r adipiscing elit. In
-              maximus ligula semper metus pellentesque mattis.
-              Maecenas volutpat, diam enim.
-            </div>
-          </div>
-        </div>
-        <div class="why-block_i col-sm-4">
-          <div class="why-block_box">
-            <div class="why_icn">
-              <img src="assets/images/icons/icon-reliable.png" alt=""/>
-            </div>
-            <div class="why_n">we`re reliable</div>
-            <div class="why_desc">
-              Lorem ipsum dolor sit amet, c-r adipiscing elit. In
-              maximus ligula semper metus pellentesque mattis.
-              Maecenas volutpat, diam enim.
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- /why block -->
   <!-- Bottom panel -->
   <section class="bottom-panel">
     <div class="container">
@@ -307,11 +224,119 @@
   <!-- /Bottom panel -->
 </div>
 <footer class="footer">
+  <div class="footer_top">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="footer_about">
+            <div class="footer_about-t"><img src="assets/images/logo/logo.png" alt=""/></div>
+            <div class="footer_about-txt">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+            <a href="#" class="btn btn-default">PURCHASE</a>
+          </div>
+        </div>
+        <div class="col-md-3 hidden-xs">
+          <div class="footer_latest-news">
+            <h3 class="footer-h3">Latest news</h3>
+            <ul class="footer_news-ul">
+              <li>
+                <div class="footer_news-img">
+                  <a href="#"><img src="assets/images/footer/news/1.jpg" alt=""/></a>
+                </div>
+                <div class="footer_news-info">
+                  <div class="footer_news-n"><a href="#">Welcome to our little corner</a></div>
+                  <div class="footer_news-comments">3 comments</div>
+                </div>
+              </li>
+              <li>
+                <div class="footer_news-img">
+                  <a href="#"><img src="assets/images/footer/news/1.jpg" alt=""/></a>
+                </div>
+                <div class="footer_news-info">
+                  <div class="footer_news-n"><a href="#">Good day for code</a></div>
+                  <div class="footer_news-comments">3 comments</div>
+                </div>
+              </li>
+              <li>
+                <div class="footer_news-img">
+                  <a href="#"><img src="assets/images/footer/news/1.jpg" alt=""/></a>
+                </div>
+                <div class="footer_news-info">
+                  <div class="footer_news-n"><a href="#">Minimalistic design</a></div>
+                  <div class="footer_news-comments">3 comments</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3 hidden-xs">
+          <div class="footer_tags">
+            <h3 class="footer-h3">Tags cloud</h3>
+            <ul class="tags_ul">
+              <li>
+                <a href="#">allowance</a>
+              </li>
+              <li>
+                <a href="#">ashamed</a>
+              </li>
+              <li>
+                <a href="#">civility</a>
+              </li>
+              <li>
+                <a href="#">depend</a>
+              </li>
+              <li>
+                <a href="#">eagernes</a>
+              </li>
+              <li>
+                <a href="#">happiness</a>
+              </li>
+              <li>
+                <a href="#">marianne</a>
+              </li>
+              <li>
+                <a href="#">stimulated</a>
+              </li>
+              <li>
+                <a href="#">time</a>
+              </li>
+              <li>
+                <a href="#">wondered</a>
+              </li>
+              <div class="clearfix"></div>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="footer_contacts">
+            <h3 class="footer-h3">Contacts</h3>
+
+            <div class="footer_contacts-info">
+              <address>231 New York City, Creative Str. 125</address>
+              <address>Email: mysupport@gmail.com</address>
+              <address>Phone 1: +17 032 353 26 72</address>
+              <address>Phone 2: +17 064 751 35 96</address>
+              <address>Fax: 544 43 32</address>
+            </div>
+            <div class="footer_contacts-form">
+              <div class="input-group">
+                <input type="email" class="form-control __transparent" placeholder="Enter your e-mail">
+              <span class="input-group-btn">
+                <button class="btn btn-default" type="button">SEND</button>
+              </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="footer_bottom">
     <div class="footer-block">
       <div class="container">
         <div class="col-md-6">
-          <div class="footer_copy">© 2015 EXCLISUVE. Design by <a href="#">Lion KAI</a></div>
+          <div class="footer_copy">© Soprano, 2015. Create by <a href="#">LionKai</a>.</div>
         </div>
         <div class="col-md-6">
           <div class="footer_social">
@@ -320,13 +345,13 @@
                 <a href="#"><i class="fa fa-twitter"></i></a>
               </li>
               <li>
-                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-youtube"></i></a>
               </li>
               <li>
-                <a href="#"><i class="fa fa-google-plus"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
               </li>
               <li>
-                <a href="#"><i class="fa fa-vimeo-square"></i></a>
+                <a href="#"><i class="fa fa-dribbble"></i></a>
               </li>
               <li>
                 <a href="#"><i class="fa fa-rss"></i></a>
@@ -340,15 +365,9 @@
 </footer>
 <script src="assets/js/lib/jquery.js"></script>
 <script src="assets/js/lib/bootstrap.js"></script>
-<script src="assets/js/lib/nprogress.js"></script>
 <script src="assets/js/lib/countUp.js"></script>
-<script src="assets/js/lib/TweenMax.js"></script>
-<script src="assets/js/lib/jquery.superscrollorama.js"></script>
 <script src="assets/js/general.js"></script>
 <script>
-  TweenMax.from($('.services-block_i'), 1.1, {opacity: 0, y:0, x:-100, yoyo:true}, 0.25);
-  TweenMax.from($('.services_icn'), 1.1, {opacity: 0, scale: 0}, 0.25);
-
   var options = {
     useEasing : true,
     useGrouping : true,
@@ -382,12 +401,6 @@
         demo4.start();
       }
     });
-    var controller = $.superscrollorama();
-
-    var staggerTween1 = new TimelineMax();
-
-    staggerTween1.add(TweenMax.staggerFrom($('.why-block_i'), 1.1, {opacity: 0, y:0, x:-100, yoyo:true}, 0.25));
-    controller.addTween('.why-block_i', staggerTween1);
   });
 </script>
 </body>

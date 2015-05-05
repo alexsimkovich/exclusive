@@ -12,6 +12,22 @@ $(function(){
         }
     );
 
+    $(".portfolio-block_i2").hover(
+        function() {
+            $(this).find(".portfolio_overlay").addClass("bounceIn animated").stop(true, true).fadeIn(650);
+        }, function() {
+            $(this).find(".bounceIn.animated").removeClass("bounceIn animated").stop(true, true).fadeOut(600);
+        }
+    );
+
+    $(".portfolio-block_i3").hover(
+        function() {
+            $(this).find(".portfolio_overlay").addClass("bounceIn animated").stop(true, true).fadeIn(650);
+        }, function() {
+            $(this).find(".bounceIn.animated").removeClass("bounceIn animated").stop(true, true).fadeOut(600);
+        }
+    );
+
     /*Tags animation*/
     $(".sidebar-tags_li").hover(
         function() {

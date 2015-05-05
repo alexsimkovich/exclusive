@@ -4,15 +4,13 @@
 
 .portfolio {
   padding: 0;
-  margin-bottom: 80px;
 
   .portfolio_t {
     text-align: center;
-    padding-bottom: 15px;
   }
 
   .portfolio-nav {
-    margin-top: 70px;
+    margin-top: 35px;
     text-align: center;
 
     .portfolio-nav_ul {
@@ -22,22 +20,23 @@
 
       .portfolio-nav_li {
         display: inline-block;
-        margin: 0 32px;
+        margin: 0 15px;
 
         a {
           font-weight: 300;
+          opacity: 0.7;
 
           &:focus,
           &:hover {
             font-weight: 400;
-            color: #111;
+            color: #555;
           }
         }
 
         &.active {
           a {
             font-weight: 400;
-            color: #111;
+            color: #555;
           }
         }
       }
@@ -50,16 +49,15 @@
     .portfolio-block_i {
       float: left;
       width: 25%;
-      height: 296px;
       margin: 0;
       padding: 0;
       overflow: hidden;
 
       .portfolio-box {
         position: relative;
-        
+
         .portfolio_img {
-          overflow: hidden;
+          position: relative;
 
           img {
             width: 100%;
@@ -74,7 +72,7 @@
           right: 0;
           bottom: 0;
           left: 0;
-          background-color: rgba(0,0,0,.7);
+          background-color: rgba(0, 0, 0, .7);
 
           .portfolio_link {
             position: absolute;
@@ -98,7 +96,149 @@
               background-color: @color-blue;
               border-radius: 0;
               color: #fff;
-              
+
+              &:hover,
+              &:focus {
+                background-color: @color-blue-hover;
+                color: #fff;
+              }
+            }
+
+            i.icon-plus {
+              position: absolute;
+              bottom: 50px;
+              left: 50%;
+              background: url(../../../assets/images/icons/icon-plus.png);
+              width: 36px;
+              height: 36px;
+              margin-left: -18px;
+            }
+          }
+        }
+      }
+    }
+    .portfolio-block_i2 {
+      float: left;
+      width: 50%;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+
+      .portfolio-box {
+        position: relative;
+
+        .portfolio_img {
+          position: relative;
+
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+
+        .portfolio_overlay {
+          display: none;
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-color: rgba(0, 0, 0, .7);
+
+          .portfolio_link {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+
+            span {
+              position: absolute;
+              top: 35%;
+              left: 50%;
+              margin-left: -91px;
+              display: inline-block;
+              padding: 15px 25px;
+              font-size: 14px;
+              line-height: 14px;
+              text-transform: uppercase;
+              font-weight: 300;
+              border: none;
+              background-color: @color-blue;
+              border-radius: 0;
+              color: #fff;
+
+              &:hover,
+              &:focus {
+                background-color: @color-blue-hover;
+                color: #fff;
+              }
+            }
+
+            i.icon-plus {
+              position: absolute;
+              bottom: 50px;
+              left: 50%;
+              background: url(../../../assets/images/icons/icon-plus.png);
+              width: 36px;
+              height: 36px;
+              margin-left: -18px;
+            }
+          }
+        }
+      }
+    }
+    .portfolio-block_i3 {
+      float: left;
+      width: 33.333333%;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+
+      .portfolio-box {
+        position: relative;
+
+        .portfolio_img {
+          position: relative;
+
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+
+        .portfolio_overlay {
+          display: none;
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-color: rgba(0, 0, 0, .7);
+
+          .portfolio_link {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+
+            span {
+              position: absolute;
+              top: 35%;
+              left: 50%;
+              margin-left: -91px;
+              display: inline-block;
+              padding: 15px 25px;
+              font-size: 14px;
+              line-height: 14px;
+              text-transform: uppercase;
+              font-weight: 300;
+              border: none;
+              background-color: @color-blue;
+              border-radius: 0;
+              color: #fff;
+
               &:hover,
               &:focus {
                 background-color: @color-blue-hover;
@@ -122,7 +262,7 @@
   }
 
   .portfolio-about {
-    padding: 65px 0 0;
+    padding: 50px 0;
     text-align: center;
   }
 
@@ -131,12 +271,12 @@
       margin-top: 70px;
       font-size: 24px;
       font-weight: 300;
-      font-family: @font-slab;
+      font-family: @font-sans;
       color: @color-text;
       margin-bottom: 25px;
       text-align: center;
     }
-    
+
     .portfolio-detail_image {
       margin-bottom: 65px;
     }
@@ -188,6 +328,7 @@
     }
   }
 }
+
 @media (max-width: 767px) {
   .portfolio {
     padding: 0;

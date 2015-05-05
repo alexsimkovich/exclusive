@@ -4,9 +4,9 @@
 
 .btn-default {
   display: inline-block;
-  padding: 14px 25px;
-  font-size: 14px;
-  line-height: 14px;
+  padding: 5px 30px;
+  font-size: 13px;
+  line-height: 24px;
   text-transform: uppercase;
   font-weight: 300;
   background-color: @color-blue;
@@ -24,6 +24,16 @@
     background-color: @color-blue-hover;
     color: #fff;
   }
+
+  &.__big {
+    display: inline-block !important;
+    padding: 14px 25px !important;
+    font-size: 14px !important;
+    line-height: 14px !important;
+    text-transform: uppercase !important;
+    font-weight: 300 !important;
+    border-radius: 0 !important;
+  }
 }
 
 .btn-white {
@@ -33,7 +43,7 @@
   line-height: 14px;
   text-transform: uppercase;
   font-weight: 300;
-  background-color:rgba(255,255,255,.3);
+
   border: 1px solid #fff;
   border-radius: 0;
   color: #fff;
@@ -45,7 +55,7 @@
 
   &:focus,
   &:hover {
-    background-color: #fff;
-    color: @color-blue;
+    background-color:rgba(255,255,255,.3);
+    color: #fff;
   }
 }

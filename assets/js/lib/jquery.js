@@ -1504,7 +1504,7 @@ getText = Sizzle.getText = function( elem ) {
 		}
 	} else if ( nodeType === 1 || nodeType === 9 || nodeType === 11 ) {
 		// Use textContent for elements
-		// innerText usage removed for consistency of new lines (jQuery #11153)
+		// innerText usage removed for consistency of new lines (jQuery #55553)
 		if ( typeof elem.textContent === "string" ) {
 			return elem.textContent;
 		} else {

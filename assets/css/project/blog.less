@@ -3,19 +3,21 @@
 **/
 
 .blog {
-  padding: 70px 0 0 0;
+  padding: 50px 0 0 0;
 
   .blog-box {
 
     .post-block {
       margin-bottom: 50px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #eee;
 
       .post-block_n {
-        margin-bottom: 20px;
+        margin-bottom: 7px;
 
         a {
-          font-family: @font-slab;
-          font-size: 24px;
+          font-family: @font-sans;
+          font-size: 27px;
           font-weight: 300;
           line-height: 24px;
           color: @color-text;
@@ -26,7 +28,7 @@
         color: #999;
         font-size: 12px;
         font-weight: 300;
-        margin-bottom: 30px;
+        margin-bottom: 10px;
 
         .meta_author {
           display: inline-block;
@@ -35,6 +37,78 @@
 
         .meta_date {
           display: inline-block;
+          margin-right: 20px;
+        }
+
+        .meta_comments {
+          display: inline-block;
+          margin-right: 20px;
+        }
+
+        .meta_tags {
+          display: inline-block;
+        }
+
+        a {
+          position: relative;
+          line-height: 24px;
+          webkit-transition: all 0.1s ease-in-out;
+          -moz-transition: all 0.1s ease-in-out;
+          -ms-transition: all 0.1s ease-in-out;
+          -o-transition: all 0.1s ease-in-out;
+          transition: all 0.1s ease-in-out;
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+
+          &:before {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 1px;
+            width: 0;
+            transition: width 0s ease, background .2s ease;
+          }
+
+          &:after {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            height: 1px;
+            width: 0;
+            background: @color-blue;
+            transition: width .2s ease;
+          }
+
+          &:hover {
+            webkit-transition: all 0.1s ease-in-out;
+            -moz-transition: all 0.1s ease-in-out;
+            -ms-transition: all 0.1s ease-in-out;
+            -o-transition: all 0.1s ease-in-out;
+            transition: all 0.1s ease-in-out;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+
+            &:after {
+              width: 100%;
+              background: transparent;
+              transition: all 0s ease;
+            }
+
+            &:before {
+              width: 100%;
+              background: #059acb;
+              transition: width .5s ease;
+            }
+          }
+        }
+
+        i {
+          font-size: 14px;
+          margin-right: 5px;
         }
       }
 
@@ -56,22 +130,64 @@
       }
 
       .post-block_readmore {
+        border-left: 1px solid #bbb;
+        padding: 0px 10px;
 
         a {
-          font-size: 12px;
-          text-transform: uppercase;
+          position: relative;
+          line-height: 24px;
+          webkit-transition: all 0.1s ease-in-out;
+          -moz-transition: all 0.1s ease-in-out;
+          -ms-transition: all 0.1s ease-in-out;
+          -o-transition: all 0.1s ease-in-out;
+          transition: all 0.1s ease-in-out;
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 
-          &:after {
-            content: "\203A";
-            padding-left: 10px;
-            color: @color-blue;
-            font-size: 20px;
-            line-height: 20px;
+          &:before {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 1px;
+            width: 0;
+            transition: width 0s ease, background .2s ease;
           }
 
-          &:hover,
-          &:focus {
+          &:after {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            height: 1px;
+            width: 0;
+            background: @color-blue;
+            transition: width .2s ease;
+          }
+
+          &:hover {
+            webkit-transition: all 0.1s ease-in-out;
+            -moz-transition: all 0.1s ease-in-out;
+            -ms-transition: all 0.1s ease-in-out;
+            -o-transition: all 0.1s ease-in-out;
+            transition: all 0.1s ease-in-out;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
             color: @color-blue;
+
+            &:after {
+              width: 100%;
+              background: transparent;
+              transition: all 0s ease;
+            }
+
+            &:before {
+              width: 100%;
+              background: #059acb;
+              transition: width .5s ease;
+            }
           }
         }
       }
@@ -90,7 +206,7 @@
           margin-bottom: 20px;
 
           a {
-            font-family: @font-slab;
+            font-family: @font-sans;
             font-size: 14px;
             font-weight: 300;
             color: @color-text;
@@ -155,6 +271,7 @@
   }
 
   .post-sidebar {
+    padding: 0 15px;
 
     .post-sidebar_cat {
       margin-top: 35px;
@@ -303,7 +420,7 @@
               a {
                 font-size: 14px;
                 line-height: 14px;
-                color: #111;
+                color: #555;
                 font-weight: 300;
               }
             }

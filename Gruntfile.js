@@ -47,8 +47,6 @@ module.exports = function(grunt) {
           'assets/js/lib/isotope.pkgd.js', // All JS in the libs folder
           'assets/js/lib/slick.js', // All JS in the libs folder
           'assets/js/lib/countUp.js', // All JS in the libs folder
-          'assets/js/lib/TweenMax.js', // All JS in the libs folder
-          'assets/js/lib/jquery.superscrollorama.js', // All JS in the libs folder
           'assets/js/general.js'
         ],
         dest: 'build/js/production.js'
