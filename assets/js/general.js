@@ -14,21 +14,25 @@ $(function(){
         }
     );
 
-    //$(".portfolio-block_i2").hover(
-    //    function() {
-    //        $(this).find(".portfolio_overlay").addClass("bounceIn animated").stop(true, true).fadeIn(650);
-    //    }, function() {
-    //        $(this).find(".bounceIn.animated").removeClass("bounceIn animated").stop(true, true).fadeOut(600);
-    //    }
-    //);
-    //
-    //$(".portfolio-block_i3").hover(
-    //    function() {
-    //        $(this).find(".portfolio_overlay").addClass("bounceIn animated").stop(true, true).fadeIn(650);
-    //    }, function() {
-    //        $(this).find(".bounceIn.animated").removeClass("bounceIn animated").stop(true, true).fadeOut(600);
-    //    }
-    //);
+    $(".portfolio-block_i2").hover(
+        function() {
+            $(this).find(".portfolio_link span").addClass("slideInDown animated").stop(true, true).fadeIn(100).delay(500);
+            $(this).find(".portfolio_link i").addClass("slideInUp animated").stop(true, true).fadeIn(100);
+        }, function() {
+            $(this).find(".slideInDown.animated").removeClass("slideInDown animated").stop(true, true).fadeOut(500);
+            $(this).find(".slideInUp.animated").removeClass("slideInUp animated").stop(true, true).fadeOut(500);
+        }
+    );
+
+    $(".portfolio-block_i3").hover(
+        function() {
+            $(this).find(".portfolio_link span").addClass("slideInDown animated").stop(true, true).fadeIn(100).delay(500);
+            $(this).find(".portfolio_link i").addClass("slideInUp animated").stop(true, true).fadeIn(100);
+        }, function() {
+            $(this).find(".slideInDown.animated").removeClass("slideInDown animated").stop(true, true).fadeOut(500);
+            $(this).find(".slideInUp.animated").removeClass("slideInUp animated").stop(true, true).fadeOut(500);
+        }
+    );
 
     /*Tags animation*/
     $(".sidebar-tags_li").hover(

@@ -14770,7 +14770,12 @@ p.testimonial-author {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.25s linear;
+  -moz-transition: all 0.25s linear;
+  -ms-transition: all 0.25s linear;
+  -o-transition: all 0.25s linear;
+  transition: all 0.25s linear;
 }
 .portfolio .portfolio-block .portfolio-block_i2 .portfolio-box .portfolio_overlay .portfolio_link {
   position: absolute;
@@ -14780,6 +14785,7 @@ p.testimonial-author {
   left: 0;
 }
 .portfolio .portfolio-block .portfolio-block_i2 .portfolio-box .portfolio_overlay .portfolio_link span {
+  display: none;
   position: absolute;
   top: 35%;
   left: 50%;
@@ -14801,6 +14807,7 @@ p.testimonial-author {
   color: #fff;
 }
 .portfolio .portfolio-block .portfolio-block_i2 .portfolio-box .portfolio_overlay .portfolio_link i.icon-plus {
+  display: none;
   position: absolute;
   bottom: 50px;
   left: 50%;
@@ -14808,6 +14815,9 @@ p.testimonial-author {
   width: 36px;
   height: 36px;
   margin-left: -18px;
+}
+.portfolio .portfolio-block .portfolio-block_i2:hover .portfolio-box .portfolio_overlay {
+  display: block;
 }
 .portfolio .portfolio-block .portfolio-block_i3 {
   float: left;
@@ -14833,7 +14843,12 @@ p.testimonial-author {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.25s linear;
+  -moz-transition: all 0.25s linear;
+  -ms-transition: all 0.25s linear;
+  -o-transition: all 0.25s linear;
+  transition: all 0.25s linear;
 }
 .portfolio .portfolio-block .portfolio-block_i3 .portfolio-box .portfolio_overlay .portfolio_link {
   position: absolute;
@@ -14843,6 +14858,7 @@ p.testimonial-author {
   left: 0;
 }
 .portfolio .portfolio-block .portfolio-block_i3 .portfolio-box .portfolio_overlay .portfolio_link span {
+  display: none;
   position: absolute;
   top: 35%;
   left: 50%;
@@ -14864,6 +14880,7 @@ p.testimonial-author {
   color: #fff;
 }
 .portfolio .portfolio-block .portfolio-block_i3 .portfolio-box .portfolio_overlay .portfolio_link i.icon-plus {
+  display: none;
   position: absolute;
   bottom: 50px;
   left: 50%;
@@ -14871,6 +14888,9 @@ p.testimonial-author {
   width: 36px;
   height: 36px;
   margin-left: -18px;
+}
+.portfolio .portfolio-block .portfolio-block_i3:hover .portfolio-box .portfolio_overlay {
+  display: block;
 }
 .portfolio .portfolio-about {
   padding: 50px 0;
