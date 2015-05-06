@@ -14390,11 +14390,11 @@ p.testimonial-quote {
   line-height: 1.6;
   letter-spacing: 0.5px;
 }
-.carousel-control.left,
-.carousel-control.right {
+.testimonials .carousel-control.left,
+.testimonials .carousel-control.right {
   background-image: none;
 }
-.carousel-control {
+.testimonials .carousel-control {
   color: #fff;
   text-shadow: none;
   margin: 0;
@@ -14415,6 +14415,25 @@ p.testimonial-author {
 .carousel-indicators {
   bottom: -8px;
   position: absolute;
+}
+.lionkai-portfolio-carousel .carousel-control {
+  text-align: center;
+  background: none;
+  font-size: 45px;
+}
+.lionkai-portfolio-carousel .carousel-control.right {
+  right: 0;
+}
+.lionkai-portfolio-carousel .carousel-control i {
+  color: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  margin-left: -0.5em;
+  margin-top: -0.5em;
+  font-size: 35px;
 }
 /**
 * Dropdown menu restyling
@@ -14896,6 +14915,10 @@ p.testimonial-author {
   padding: 50px 0;
   text-align: center;
 }
+.portfolio .portfolio-detail {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
 .portfolio .portfolio-detail .portfolio-detail_t {
   margin-top: 70px;
   font-size: 24px;
@@ -14910,6 +14933,39 @@ p.testimonial-author {
 }
 .portfolio .portfolio-detail .portfolio-detail_info {
   text-align: center;
+}
+.portfolio .portfolio-detail .portfolio-info {
+  border-bottom: solid 1px #F0F0F0;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  color: #555;
+}
+.portfolio .portfolio-detail .portfolio-info a {
+  color: #059acb;
+}
+.portfolio .portfolio-detail .protfolio_nav {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 40px;
+  color: #555;
+  margin-bottom: 80px;
+  overflow: hidden;
+}
+.portfolio .portfolio-detail .protfolio_nav a {
+  color: #A2A2A2;
+  border: solid 1px #EEE;
+  font-size: 14px;
+  padding: 5px 10px;
+}
+.portfolio .portfolio-detail .protfolio_nav a[rel="prev"] {
+  float: left;
+}
+.portfolio .portfolio-detail .protfolio_nav a[rel="next"] {
+  float: right;
+}
+.portfolio .lionkai-portfolio-carousel,
+.portfolio .portfolio_description {
+  margin-bottom: 40px;
 }
 @media (min-width: 1200px) and (max-width: 1699px) {
   .portfolio {
@@ -15864,12 +15920,12 @@ p.testimonial-author {
 * Services styles
 **/
 .services .services_t {
-  margin-top: 70px;
+  margin-top: 80px;
   font-size: 24px;
   color: #555555;
   font-family: 'Open sans', sans-serif;
   font-weight: 300;
-  padding: 0 0 60px;
+  padding: 0 0 10px;
   text-align: center;
 }
 .services .services-block .services-block_i {
@@ -15980,15 +16036,16 @@ p.testimonial-author {
 * About styles
 **/
 .about {
-  padding: 80px 0 85px;
+  padding: 50px 0 55px;
 }
 .about .about_t {
   position: relative;
   font-family: 'Open sans', sans-serif;
-  font-size: 24px;
+  font-size: 25px;
   line-height: 24px;
-  padding-bottom: 30px;
+  padding-bottom: 28px;
   margin-bottom: 30px;
+  letter-spacing: 0.8px;
   color: #555;
   font-weight: 300;
 }
@@ -16002,7 +16059,7 @@ p.testimonial-author {
   background-color: #059acb;
 }
 .about .about_box {
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 }
 .about .about_box .about_box-t {
   font-size: 14px;
@@ -16012,10 +16069,12 @@ p.testimonial-author {
   font-weight: 300;
 }
 .about .about_box .about_box-txt {
-  font-size: 14px;
+  font-size: 15px;
   color: #555555;
   line-height: 24px;
-  width: 90%;
+}
+.about .about_image {
+  text-align: center;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .about_image img {
